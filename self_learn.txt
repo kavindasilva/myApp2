@@ -1,0 +1,17 @@
+
+https://ionicframework.com/docs/v1/guide/testing.html
+https://www.gajotres.net/ionic-2-tutorial-lets-create-our-first-application/
+
+===================================================================
+ionic start myApp blank // create "myApp" as a blank application
+cd myApp
+
+ionic platform add android //add android
+ionic build android //compile
+
+ionic serve //open app in browser
+
+
+====================================================================
+
+in HTML events are case sensitive

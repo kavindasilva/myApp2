@@ -17,14 +17,22 @@
   <div>
     <h2>My page 3 heading</h2>
 
-    <button >back</button>
+    <button (click)="goback()" (long-press)="openFilters()" >back</button>
 
     <ion-buttons >
       <button ion-button left class="loginnavbtn" (click)="goback()">
         Cancel (passata)
       </button>
       <!-- left aligned content here -->
-      </ion-buttons>
+
+      <button ion-button left class="loginnavbtn" (click)="openFilters()">
+        Lpress (passata)
+      </button>
+
+      <button ion-button left class="loginnavbtn" (long-press)="showActionSheet(object)">
+        Lpress2 (passata)
+      </button>
+    </ion-buttons>
 
   </div>
 </ion-content>
