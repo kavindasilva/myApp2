@@ -22,8 +22,21 @@ export class Pg3Page {
     this.movie = navParams.get('movie');
   }
 
+  goback() {
+    this.navCtrl.pop();
+    console.log('Click on button Test Console Log');
+ }
+
   ionViewDidLoad() {
     console.log('ionViewDidLoad Pg3Page');
   }
+
+
+  itemTapped(event, movie) {
+		console.log(movie);  
+		this.navCtrl.push(Pg3Page, {
+			movie: movie
+		});
+	}
 
 }

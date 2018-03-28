@@ -29,7 +29,14 @@ export class HomePage {
 				},
 				() => console.log('Movie Search Complete')
 			//);
-		}
+    }
+    else{
+      this.movies=null,
+				err => {
+					console.log(err);
+				},
+				() => console.log('Movie Search Complete')
+    }
 	} /**/
 
 	itemTapped(event, movie) {
