@@ -1,0 +1,36 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title style="color:aqua;">
+      Ionic Blank
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  The world is your oyster.
+  <p class='ks-home'>
+    If you get lost, the <a href="http://ionicframework.com/docs/v2">docs</a> will be your guide.
+  </p>
+<P class="ks-home2">
+  KS link to next page 
+</P>
+
+<ion-item>
+  <ion-label color="primary" stacked>Search movie database</ion-label>
+  <ion-input style="color: #eeee00;" type="text" (input)="searchMovieDB($event, searchKey)"></ion-input>
+</ion-item>
+
+<ion-list>	
+  <ion-item *ngFor="let movie of movies" (click)="itemTapped($event, movie)">
+    <ion-avatar item-left>
+      <!--img src="https://image.tmdb.org/t/p/w92{{movie.poster_path}}"/-->
+      <img src="https://www.google.lk/images/branding/googlelogo/2x/googlelogo_color_120x44dp.png"/>
+    </ion-avatar>
+    <!--h2>{{movie.original_title}}</h2>
+    <p-- class="item-description">{{movie.overview}}</p-->
+    <h2>hard code1</h2>
+    <p class="item-description">hardcode1 desc</p>
+  </ion-item>
+</ion-list>
+
+</ion-content>
