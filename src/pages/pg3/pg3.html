@@ -7,7 +7,15 @@
 <ion-header>
 
   <ion-navbar>
-    <ion-title>pg3</ion-title>
+
+          <ion-buttons>
+                  <button ion-button left class="button icon ion-navicon">bt1</button>
+                  Header Buttons
+                  <button ion-button right class="loginnavbtn">bt2</button>
+                  
+                  </ion-buttons>
+
+    <!--ion-title>pg3</ion-title-->
   </ion-navbar>
 
 </ion-header>
@@ -15,6 +23,8 @@
 
 <ion-content padding>
   <div>
+
+
     <h2>My page 3 heading</h2>
 
     <button (click)="goback()" (long-press)="openFilters()" >back</button>
@@ -32,6 +42,14 @@
       <button ion-button left class="loginnavbtn" (long-press)="showActionSheet(object)">
         Lpress2 (passata)
       </button>
+    </ion-buttons>
+
+    <br/>
+
+    <ion-buttons>
+        <button ion-button left class="loginnavbtn" (click)="gonextpg()">
+            page4
+        </button>
     </ion-buttons>
 
   </div>

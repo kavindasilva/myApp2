@@ -11,7 +11,17 @@ ionic build android //compile
 
 ionic serve //open app in browser
 
+ionic generate page pgname //create new page "pgname"
+
 
 ====================================================================
 
 in HTML events are case sensitive
+
+====================================================================
+
+this.navCtrl.push( <next page(export class name)>,{
+
+var1_name: value(s),
+var2_name: value(s)
+});

@@ -1,3 +1,4 @@
+import { Pg4Page } from './../pg4/pg4';
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
 import {AlertController} from 'ionic-angular';
@@ -41,6 +42,16 @@ export class Pg3Page {
   goback() {
     this.navCtrl.pop();
     console.log('Click on button Test Console Log');
+ }
+
+ gonextpg(){
+
+  this.navCtrl.pop();
+   this.navCtrl.push(Pg4Page);
+   //const index = this.navCtrl.indexOf(this);
+   //this.navCtrl.remove(index,0);
+
+
  }
 
  //alert sample code
